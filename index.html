@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!----------------HEADER-------------------->
+    <header>
+        <div class="container">
+            <div class="logo">Welcome To My Portfolio</a>
+            </div>
+            <div>
+                <nav>
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+
+                    <a href="#contact">Contact</a>
+
+                </nav>
+            </div>
+    </header>
+
+
+
+
+    <!----------------------Home Section-------------------->
+    <section id="home" class="hero">
+
+        <div class="container">
+            <div class="hero-text">
+                <h1>Hello, I Am <span>Sneha Singh</span></h1>
+                <!-- Dynamic Typing Text Container -->
+                <h2>
+                    <span class="static-text">I'm a </span>
+                    <span id="typed-element"></span>
+                </h2>
+
+                <!-- 1. Typed.js CDN Library -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+                <script src="script.js"></script>
+                <br>
+                <p>Hello! I'm a BCA student and aspiring web developer. Explore my work and
+                    projects
+                    below.</p>
+                <div class="button-group">
+                    <a href="#projects" class="btn-projects">View My Projects</a>
+                    <a href="resume.pdf" download class="btn-resume">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="WhatsApp Image 2026-08-14 at 9.48.03 PM.jpeg" class="profile-photo" alt="Profile Photo">
+        </div>
+
+
+    </section>
+
+
+    <!---------------------About Section-------------------->
+    <section id="about">
+        <div class="container">
+            <div class="hero-text">
+                <div class="section-title">
+                    <span class="sub-heading">ABOUT</span>
+
+                    <div class="header-line"></div>
+                </div>
+                <h2>About Me</h2>
+            </div>
+
+            <!-- Top 4 Cards Grid (JS dwara fill hoga) -->
+            <div class="top-cards-grid" id="top-cards"></div>
+
+            <!-- Bottom Layout -->
+            <div class="bottom-about-container">
+                <!-- Left Bio Card -->
+                <div class="bio-card" id="bio-card"></div>
+
+                <!-- Right Side Cards (JS dwara fill hoga) -->
+                <div class="right-cards-list" id="right-cards"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!---------------------Education Section-------------------->
+    <section id="education">
+        <div class="container">
+            <div class="hero-text">
+
+                <div class="section-title">
+                    <span class="sub-heading">MY JOURNEY</span>
+
+                    <div class="header-line"></div>
+                </div>
+                <h2>Educational Qualifications</h2>
+
+                <!-- Dynamic Roadmap Container -->
+                <div class="roadmap-container" id="roadmap-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------Certification-------------------->
+    <section id="certifications">
+        <div class="container">
+            <div class="hero-text">
+                <section class="certificates-section">
+                    <div class="section-title">
+                        <span class="sub-heading">ACHIEVEMENTS</span>
+
+                        <div class="header-line"></div>
+                    </div>
+                    <h2>Certifications & Accomplishments</h2>
+                    <!-- Dynamic Certificate Grid -->
+                    <div class="cert-grid" id="cert-grid"></div>
+
+            </div>
+    </section>
+
+
+    <!---------------------- Skills Section --------------------->
+    <section id="skills" class="skills">
+        <section class="skill-section">
+            <div class="section-title">
+                <span class="sub-heading">SKILL</span>
+                <div class="header-line"></div>
+            </div>
+            <h2>Technical Proficiency</h2>
+            <div class="skill-list">
+                <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+
+                <div class="skill"><i class="fab fa-python"></i> Python</div>
+
+            </div>
+        </section>
+    </section>
+
+
+    <!---------------------Projects Section-------------------->
+    <section id="projects">
+        <div class="container">
+            <div class="hero-text">
+                <div class="section-title">
+                    <span class="sub-heading">MY CREATIONS</span>
+
+                    <div class="header-line"></div>
+                </div>
+                <h2>Featured Projects</h2>
+                <!-- Dynamic Project Cards Container -->
+                <div class="projects-grid" id="projects-grid"></div>
+    </section>
+    </div>
+    </div>
+    </section>
+
+
+
+    <!---------------------Contact Section-------------------->
+    <section id="contact">
+        <section class="alt-contact-section">
+            <div class="section-title">
+                <span class="sub-heading">CONNECT WITH ME</span>
+
+                <div class="header-line"></div>
+            </div>
+            <h2>Send A Direct Message</h2>
+            <div class="contact-card-wrapper">
+                <!-- Top Contact Badges -->
+                <div class="contact-badges-row">
+                    <a href="mailto:yourname@email.com" class="contact-badge">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <div>
+                            <small>Direct Email</small>
+                            <strong>singh123sneha45@gmail.com</strong>
+
+                        </div>
+
+                    </a>
+                    <div class="contact-badge">
+                        <i class="fa-solid fa-contact"></i>
+                        <div>
+                            <small>Contact</small>
+                            <strong>8127365806</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-badge">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <small>Based In</small>
+                            <strong>India</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Floating Label Contact Form -->
+                <!-- ⚠️ Paste your Formspree link in action="" -->
+                <form id="contact-form" action="https://formspree.io/f/mqpzveze" method="POST" class="alt-contact-form">
+
+                    <div class="form-row">
+                        <div class="floating-group">
+                            <input type="text" name="name" id="user_name" placeholder=" " required />
+                            <label for="user_name">Your Name</label>
+                        </div>
+
+                        <div class="floating-group">
+                            <input type="email" name="email" id="user_email" placeholder=" " required />
+                            <label for="user_email">Your Email</label>
+                        </div>
+                    </div>
+
+                    <div class="floating-group">
+                        <input type="text" name="subject" id="user_subject" placeholder=" " required />
+                        <label for="user_subject">Subject</label>
+                    </div>
+
+                    <div class="floating-group">
+                        <textarea name="message" id="user_message" rows="4" placeholder=" " required></textarea>
+                        <label for="user_message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="alt-submit-btn" id="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!---------------------Footer Section-------------------->
+    <footer>
+        <div class="social-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/sneha-singh-590bb5330" target="_blank" class="linkedin"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:singh123sneha45@gmail.com" class="gmail" aria-label="Gmail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/candygirl8x/" target="_blank" class="github" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>&copy; 2026 Sneha Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
