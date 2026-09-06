@@ -42,9 +42,10 @@ body {
 #home {
 
     color: black;
-    padding: 10px, 40px;
+    padding: 10px, 0px;
     border-radius: 10px;
     margin-bottom: 20px;
+    font-size: 20px;
 
 }
 
@@ -63,7 +64,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 24px;
+    padding: 14px 0px;
     border-radius: 10px;
     font-size: 15px;
     font-weight: 700;
@@ -176,6 +177,7 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .card-info h4 {
@@ -183,6 +185,7 @@ body {
     color: #0f172a;
     margin-top: 2px;
     font-weight: 700;
+    font-size: 16px;
 }
 
 /* Bottom Grid Layout */
@@ -201,7 +204,7 @@ body {
     padding: 24px;
     line-height: 1.7;
     color: #334155;
-    font-size: 15px;
+    font-size: 20px;
     box-sizing: border-box;
     height: 100%;
     flex-direction: column;
@@ -214,6 +217,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.6;
     color: #475569;
+    font-size: 15px;
 }
 
 .bio-text p:last-child {
@@ -253,12 +257,14 @@ body {
     color: #0f172a;
     font-weight: 700;
     margin-bottom: 4px;
+    font-size: 20px;
 }
 
 .right-card p {
     font-size: 13px;
     color: #64748b;
     margin: 0;
+    font-size: 18px;
 }
 
 /* Base Transition for Top Cards */
@@ -309,13 +315,13 @@ body {
 .education-section {
     max-width: 1100px;
     margin: 60px auto;
-    padding: 20px 20px;
+    padding: 20px 0px;
     font-family: 'Segoe UI', Inter, sans-serif;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .sub-heading {
@@ -396,7 +402,7 @@ body {
     background-color: #f8fafc;
     color: #64748b;
     border: 1px solid #e2e8f0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     padding: 4px 12px;
     border-radius: 20px;
@@ -409,6 +415,7 @@ body {
     color: #0f172a;
     margin: 0 0 6px 0;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .roadmap-card .institution {
@@ -416,6 +423,7 @@ body {
     color: #64748b;
     margin-bottom: 16px;
     line-height: 1.4;
+    font-size: 16px;
 }
 
 .score-badge {
@@ -458,7 +466,7 @@ body {
 .certificates-section {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0px 0px;
     font-family: 'Segoe UI', Inter, sans-serif;
 }
 
@@ -484,12 +492,14 @@ body {
     transform: translateY(-8px);
     border-color: #2563eb;
     box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.18);
+
 }
 
 /* Certificate Header Accent Banner */
 .cert-banner {
     height: 8px;
     background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+    padding: 10px 10px;
 }
 
 .cert-body {
@@ -522,6 +532,7 @@ body {
     font-size: 12px;
     color: #94a3b8;
     font-weight: 500;
+    font-size: 15px;
 }
 
 .cert-title {
@@ -530,15 +541,17 @@ body {
     font-weight: 700;
     margin: 0 0 8px 0;
     line-height: 1.3;
+    font-size: 20px;
 }
 
 .cert-issuer {
     font-size: 14px;
     color: #64748b;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 6px;
+    font-size: 18px;
 }
 
 .cert-skills {
@@ -555,6 +568,7 @@ body {
     padding: 3px 8px;
     border-radius: 4px;
     font-weight: 600;
+    font-size: 13px;
 }
 
 /* View Button Styling */
@@ -590,12 +604,12 @@ body {
 
 /* Skills Section*/
 .skills {
-    padding: 80px 10%;
+    padding: 0px 0px;
     background-color: lightblue;
 }
 
 .sub-heading {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 2px;
     color: #2563eb;
@@ -609,17 +623,18 @@ body {
     font-weight: 800;
     color: #0f172a;
     margin-bottom: 8px;
+
 }
 
 .skills .skill-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 95px;
 }
 
 .skills .skill {
-    background-color: lightseagreen;
+    background-color: lightskyblue;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -642,7 +657,7 @@ body {
 .projects-section {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 10px 10px;
     font-family: 'Segoe UI', Inter, sans-serif;
 }
 
@@ -692,14 +707,15 @@ body {
 
 .project-badge {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 9px;
+    right: 88px;
     background: rgba(15, 23, 42, 0.75);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     color: #38bdf8;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    padding: 5px 12px;
+    padding: 10px 5px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
@@ -719,10 +735,11 @@ body {
     color: #0f172a;
     font-weight: 800;
     margin: 0 0 10px 0;
+    font-size: 25px;
 }
 
 .project-desc {
-    font-size: 14px;
+    font-size: 18px;
     color: #64748b;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -737,11 +754,11 @@ body {
 }
 
 .tech-chip {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: #2563eb;
     background-color: #eff6ff;
-    padding: 4px 10px;
+    padding: 4px 0px;
     border-radius: 6px;
 }
 
@@ -756,9 +773,9 @@ body {
     flex: 1;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 8px;
-    padding: 10px 0;
+    padding: 8px 6px;
     border-radius: 10px;
     font-size: 13px;
     font-weight: 600;
@@ -955,50 +972,137 @@ body {
 }
 
 /* Header */
-header {
-    width: 100%;
-    height: 70%;
-    background-color: #fff;
-    color: rgb(0, 179, 255);
+/* Sticky Glassmorphism Header */
+.navbar {
+    position: static;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 60px;
-    text-align: center;
-
-
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
 }
 
+/* Modern Logo Styling */
 .logo {
-    color: rgb(0, 179, 255);
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: -0.5px;
 }
 
-
-
-
-nav {
-    margin-top: 10px;
-
-
-
-
+.logo span {
+    color: #0ea5e9;
+    font-size: 1cm;
+    /* Vibrant Accent Color */
 }
 
-nav a {
-    color: rgb(0, 179, 255);
-    text-decoration: underline;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 17px;
-    transition: 0.3s;
-    text-align: center;
+/* Nav Menu & Hover Line Animation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: black;
+.nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
 
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #0ea5e9;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0ea5e9;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Eye-Catching Call To Action Button */
+.btn-contact {
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: #ffffff !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.btn-contact::after {
+    display: none !important;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
+}
+
+/* Hide Hamburger on Desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1e293b;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile & Android Styles (Screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        /* Show 3 lines icon */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0;
+        gap: 1.5rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+
+        /* Initially hidden off-screen or faded out */
+        display: none;
+    }
+
+    /* Class toggled via JS to show menu */
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /*Profile*/
@@ -1024,16 +1128,16 @@ img {
 
 /* section 1  */
 .hero {
-    min-height: 90vh;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10%;
+    padding: 27px 0px;
     background-color: lightblue;
 }
 
 .hero-text h1 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 15px;
     color: rgb(0, 179, 255);
     text-align: left;
@@ -1041,7 +1145,7 @@ img {
 }
 
 .hero-text h2 {
-    font-size: 30px;
+    font-size: 33px;
     margin-bottom: 10px;
     color: black;
     text-align: left;
@@ -1072,11 +1176,12 @@ img {
 }
 
 .hero-image img {
-    width: 350px;
-    height: 350px;
+    width: 207px;
+    height: 232px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid black;
+    display: block;
 }
 
 /*Input*/
@@ -1135,7 +1240,7 @@ footer {
     color: black;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: static;
     line-height: 3%;
     width: 100%;
     bottom: 0;

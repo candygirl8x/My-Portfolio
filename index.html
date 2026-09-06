@@ -19,24 +19,28 @@
     </div>
 
     <!----------------HEADER-------------------->
-    <header>
-        <div class="container">
-            <div class="logo">Welcome To My Portfolio</a>
-            </div>
-            <div>
-                <nav>
+    <header class="navbar">
+        <div class="logo">
+            <span>WELCOME</span>
+        </div>
 
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skill">Skill</a>
-                    <a href="#contact">Contact</a>
+        <!-- Mobile Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
 
-                </nav>
-            </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
-
-
-
 
     <!----------------------Home Section-------------------->
     <section id="home" class="hero">
@@ -81,7 +85,7 @@
         <div class="container">
             <div class="hero-text">
                 <div class="section-title">
-                    <span class="sub-heading">ABOUT</span>
+                    <span class="sub-heading">Meet The Developer</span>
 
                     <div class="header-line"></div>
                 </div>
@@ -143,39 +147,45 @@
 
     <!---------------------- Skills Section --------------------->
     <section id="skill">
-        <section id="skills" class="skills">
-            <section class="skill-section">
-                <div class="section-title">
-                    <span class="sub-heading">SKILL</span>
-                    <div class="header-line"></div>
-                </div>
-                <h2>Technical Proficiency</h2>
-                <div class="skill-list">
-                    <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-                    <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-                    <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="container">
+            <div class="hero-text">
+                <section id="skills" class="skills">
+                    <section class="skill-section">
+                        <div class="section-title">
+                            <span class="sub-heading">SKILL</span>
 
-                    <div class="skill"><i class="fab fa-python"></i> Python</div>
+                            <div class="header-line"></div>
+                        </div>
+                        <h2>Technical Proficiency</h2>
+                        <div class="skill-list">
+                            <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                            <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
 
-                </div>
-            </section>
-        </section>
+                            <div class="skill"><i class="fab fa-python"></i> Python</div>
+
+                            <div class="skill-grid" id="skills-grid"></div>
+                        </div>
 
 
-        <!---------------------Projects Section-------------------->
-        <section id="projects">
-            <div class="container">
-                <div class="hero-text">
-                    <div class="section-title">
-                        <span class="sub-heading">MY CREATIONS</span>
+                    </section>
+                </section>
 
-                        <div class="header-line"></div>
-                    </div>
-                    <h2>Featured Projects</h2>
-                    <!-- Dynamic Project Cards Container -->
-                    <div class="projects-grid" id="projects-grid"></div>
-        </section>
-        </div>
+
+                <!---------------------Projects Section-------------------->
+                <section id="projects">
+                    <div class="container">
+                        <div class="hero-text">
+                            <div class="section-title">
+                                <span class="sub-heading">MY CREATIONS</span>
+
+                                <div class="header-line"></div>
+                            </div>
+                            <h2>Featured Projects</h2>
+                            <!-- Dynamic Project Cards Container -->
+                            <div class="projects-grid" id="projects-grid"></div>
+                </section>
+            </div>
         </div>
     </section>
 
@@ -260,7 +270,7 @@
     <footer>
         <div class="social-links">
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/sneha-singh-590bb5330" target="_blank" class="linkedin"
+            <a href="https://www.linkedin.com/in/sneha-singh-590bb5330" target="_blank" rel="noopener" class="linkedin"
                 aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
@@ -271,7 +281,7 @@
             </a>
 
             <!-- GitHub -->
-            <a href="https://github.com/candygirl8x/" target="_blank" class="github" aria-label="GitHub">
+            <a href="https://github.com/candygirl8x/" target="_blank" rel="noopener" class="github" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
