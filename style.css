@@ -41,7 +41,7 @@ body {
 /*home*/
 #home {
 
-    color: black;
+    color: darkseagreen;
     padding: 10px, 0px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -114,7 +114,7 @@ body {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #2563eb;
+    color: burlywood;
     text-transform: uppercase;
     text-align: center;
     justify-self: center;
@@ -328,7 +328,7 @@ body {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #2563eb;
+    color: burlywood;
     text-transform: uppercase;
 }
 
@@ -605,14 +605,14 @@ body {
 /* Skills Section*/
 .skills {
     padding: 0px 0px;
-    background-color: lightblue;
+
 }
 
 .sub-heading {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #2563eb;
+    color: burlywood;
     text-transform: uppercase;
     text-align: center;
     justify-self: center;
@@ -982,6 +982,8 @@ body {
     padding: 1rem 5%;
     background: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     z-index: 1000;
@@ -1011,7 +1013,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #64748b;
+    color: white;
     font-weight: 500;
     font-size: 0.95rem;
     position: relative;
@@ -1083,10 +1085,9 @@ body {
 
     .nav-links {
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.95);
+        top: 99%;
+        right: 0;
+
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         flex-direction: column;
@@ -1103,6 +1104,79 @@ body {
     .nav-links.active {
         display: flex;
     }
+}
+
+/* Color Palette Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1e293b;
+    --nav-bg: rgba(255, 255, 255, 0.85);
+    --accent-color: #0ea5e9;
+}
+
+/* Dark Mode Color Palette */
+/* Medium Slate / Soft Dark Mode Theme */
+body.dark-mode {
+    --bg-color: #2b2d42;
+    /* Warm Dark Slate */
+    --text-color: #edf2f4;
+    /* Off-White Text */
+    --nav-bg: rgba(43, 45, 66, 0.90);
+    --accent-color: #ffb703;
+    /* Golden Amber Accent */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #2563eb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Updated Navbar Styles */
+.navbar {
+    position: static;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Theme Toggle Button Style */
+.theme-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
 }
 
 /*Profile*/
@@ -1133,7 +1207,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 27px 0px;
-    background-color: lightblue;
+
 }
 
 .hero-text h1 {
@@ -1147,7 +1221,7 @@ img {
 .hero-text h2 {
     font-size: 33px;
     margin-bottom: 10px;
-    color: black;
+    color: #2563eb;
     text-align: left;
     font-family: "Times New Roman", Times, serif;
 }

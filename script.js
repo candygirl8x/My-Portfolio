@@ -287,3 +287,28 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     navLinks.classList.remove('active');
   });
 });
+
+
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+// Check saved theme from localStorage
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeToggleBtn.textContent = '☀️';
+}
+
+// Toggle logic
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  let theme = 'light';
+  if (document.body.classList.contains('dark-mode')) {
+    theme = 'dark';
+    themeToggleBtn.textContent = '☀️';
+  } else {
+    themeToggleBtn.textContent = '🌙';
+  }
+
+  localStorage.setItem('theme', theme);
+});
