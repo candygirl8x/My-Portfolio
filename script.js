@@ -140,9 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
       title: " Python Full Stack Development",
       platform: "CSJMU Python Full Stack Workshop",
       issuer: " Chhatrapati Shahu Ji Maharaj University",
-      date: "March 2026",
+      date: "February 2026",
       skills: ["Python"],
-      image: "WhatsApp Image 2026-08-24 at 9.50.01 PM.jpeg" // Insert your verification link or image path
+      image: "certificates/python-full-stack.jpeg"
     }
 
   ];
@@ -167,12 +167,46 @@ document.addEventListener("DOMContentLoaded", function () {
               ${cert.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
             </div>
           </div>
-          <a href="${cert.link}" target="_blank" class="cert-btn">
-            View Certificate <i class="fa-solid fa-arrow-right"></i>
-          </a>
+         <button type="button" class="cert-btn" data-image="${cert.image}" data-title="${cert.title.trim()}">
+  View Certificate <i class="fa-solid fa-arrow-right"></i>
+</button>
         </div>
       </div>
-    `).join('');
+        `).join('');
+
+    // ---- Certificate popup ----
+    const modal = document.createElement("div");
+    modal.className = "cert-modal";
+    modal.innerHTML = `
+      <div class="cert-modal-content">
+        <button type="button" class="cert-modal-close" aria-label="Close">&times;</button>
+        <img class="cert-modal-img" src="" alt="Certificate">
+      </div>`;
+    document.body.appendChild(modal);
+
+    const modalImg = modal.querySelector(".cert-modal-img");
+
+    function closeModal() {
+      modal.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    certContainer.addEventListener("click", function (e) {
+      const btn = e.target.closest(".cert-btn");
+      if (!btn) return;
+      modalImg.src = encodeURI(btn.dataset.image);
+      modalImg.alt = btn.dataset.title;
+      modal.classList.add("open");
+      document.body.style.overflow = "hidden";
+    });
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal || e.target.closest(".cert-modal-close")) closeModal();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeModal();
+    });
   }
 
 });

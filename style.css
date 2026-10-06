@@ -586,6 +586,8 @@ body {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
+    font-family: inherit;
     transition: all 0.3s ease;
 }
 
@@ -1380,4 +1382,50 @@ footer a {
 .secondary-btn:hover {
     background-color: #3b82f6;
     color: #ffffff;
+}
+
+/* Certificate popup */
+.cert-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.cert-modal.open {
+    display: flex;
+}
+
+.cert-modal-content {
+    position: relative;
+    max-width: 95vw;
+    max-height: 90vh;
+}
+
+.cert-modal-img {
+    display: block;
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cert-modal-close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
