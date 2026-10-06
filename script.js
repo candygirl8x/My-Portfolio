@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
       issuer: " Chhatrapati Shahu Ji Maharaj University",
       date: "February 2026",
       skills: ["Python"],
-      image: "WhatsApp Image 2026-08-24 at 9.50.01 PM.jpeg"
+      image: "certificate/python-full-stack.jpeg"
     }
 
   ];
